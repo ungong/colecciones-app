@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+    <name>colecciones-parent</name>  <!-- Nombre del proyecto parent -->
+    <comment>Parent POM for Colecciones App</comment>
+
+    <!-- No incluimos los módulos aquí (ya están en el pom.xml) -->
+    <buildSpec>
+        <!-- Solo el builder de Maven, sin javabuilder -->
+        <buildCommand>
+            <name>org.eclipse.m2e.core.maven2Builder</name>
+            <arguments></arguments>
+        </buildCommand>
+    </buildSpec>
+    <natures>
+        <!-- Solo la naturaleza Maven, sin javanature -->
+        <nature>org.eclipse.m2e.core.maven2Nature</nature>
+    </natures>
+</projectDescription>

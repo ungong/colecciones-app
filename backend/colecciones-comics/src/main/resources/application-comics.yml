@@ -1,0 +1,22 @@
+server:
+  port: 8081  # Puerto único para el módulo de Comics
+
+spring:
+  application:
+    name: colecciones-comics
+  datasource:
+    url: jdbc:h2:mem:comicsdb;DB_CLOSE_DELAY=-1;INIT=RUNSCRIPT FROM 'classpath:db/comics-schema.sql'
+    username: sa
+    password: ""
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+      path: /h2-comics
+  jpa:
+    hibernate:
+      ddl-auto: none  # Deshabilitamos auto-ddl porque usamos el script SQL
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
