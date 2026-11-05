@@ -1,3 +1,3 @@
 <template>
-  <h1>Detalles de la Colección</h1>
+  <div>Detalles de la colección (ID: {{ $route.params.id }})</div>
 </template>
